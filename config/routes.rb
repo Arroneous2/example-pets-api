@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "pets" => "pets#index"
+  post "pets" => "pets#create"
 
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
